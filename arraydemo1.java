@@ -16,7 +16,7 @@ int rollNumber, sum=0;
 
 Scanner sc = new Scanner(System.in);
 
-System.out.print("Enter a name");
+System.out.println("Enter a name");
 name=sc.next();
 
 System.out.print("roll number");
