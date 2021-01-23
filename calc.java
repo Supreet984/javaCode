@@ -3,51 +3,59 @@ import java.util.*;
 
 class Numbers{
 
-float numb(int number,int number1, char choice){
+void numb(){
 
 float res=0;
-switch(choice)
+char choice='Y';
+int number;
+int number2;
+
+while(choice=='Y' || choice=='y'){
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter two numbers ");
+ number=sc.nextInt();
+ number2=sc.nextInt();
+
+System.out.print("Enter your choice ");
+
+System.out.println("+ for addition ");
+System.out.println("- for subtraction");
+System.out.println("* for multiplication");
+System.out.println("/ for division");
+
+char operation=sc.next().charAt(0);
+switch(operation)
 {
-case '+': res=number+number1;
+case '+': res=number+number2;
           break;
 
-case '-': res=number-number1;
+case '-': res=number-number2;
           break;
 
-case '*': res=number*number1;
+case '*': res=number*number2;
           break;
 
-case '/': res=(float)number/number1;
+case '/': res=(float)number/number2;
           break;
 
 default: System.out.println("incorrect choice");
          break;
 
 }
-return res;
+ System.out.print(res);
+ System.out.println("Do you want to calculate more ");
+ choice=sc.next().charAt(0);
 }
 }
-
+}
 class Main{
 public static void main(String...args){
 
-Scanner sc = new Scanner(System.in);
-System.out.print("Enter two numbers ");
-int number=sc.nextInt();
-int number2=sc.nextInt();
 
-System.out.print("Enter your choice ");
-
-System.out.println("+ for addition ");
-System.out.print("- for subtraction");
-System.out.print("* for multiplication");
-System.out.print("/ for division");
-
-char choice=sc.next().charAt(0);
 
 
 Numbers numb1 = new Numbers();
-float result = numb1.numb(number,number2,choice);
-System.out.print(result);
+ numb1.numb();
+
 }
 }
