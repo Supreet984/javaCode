@@ -28,16 +28,10 @@ System.out.println(arr[i]);
 }
 }
 
-
-
-
-
-
 class Main{
 public static void main(String...args){
 
 Scanner sc = new Scanner(System.in);
-
 
 int [] arr = new int[10];
 
