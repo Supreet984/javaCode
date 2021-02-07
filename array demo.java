@@ -3,7 +3,6 @@ import java.util.*;
 
 class Marks{
 
-
 void student(){
 
 int a[5],i;

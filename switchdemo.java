@@ -2,7 +2,8 @@ import java.util.Scanner;
 import java.util.*;
 class DayOfTheWeek{
 void day(int number)
-{ switch(number)
+{ 
+switch(number)
 { 
 case 1: System.out.print("Sunday");
 	break;
@@ -22,7 +23,7 @@ default: System.out.print("There ARE only 7 days in a week");
 } 
 }
 }
-class main{
+class Main{
 public static void main(String...args)
 {
   
