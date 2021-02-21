@@ -31,6 +31,7 @@ percentage=(sum/5);
 }
 }
 }
+
 class Main{
 public static void main(String...args){
 int i;
@@ -52,6 +53,7 @@ for(i=0;i<5;i++){
 
 marks[i]=sc.nextFloat();
 }
+
 
 Student student1 = new Student(name,rollnumber,marks);
 
